@@ -10,11 +10,8 @@ fun fizzbuzz(maxNumber: Int) {
         val sb = StringBuilder()
         if (i % 3 == 0) sb.append("Fizz")
         if (i % 5 == 0) sb.append("Buzz")
-        if(sb.isEmpty()) {
-            println(i)
-        } else {
-            println(sb.toString())
-        }
+
+        if(sb.isEmpty()) println(i) else println(sb.toString())
     }
 
 }
