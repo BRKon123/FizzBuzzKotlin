@@ -11,7 +11,8 @@ fun fizzbuzz(maxNumber: Int) {
         if (i % 3 == 0) sb.append("Fizz")
         if (i % 5 == 0) sb.append("Buzz")
 
-        if(sb.isEmpty()) println(i) else println(sb.toString())
+        val result = if(sb.isEmpty()) i else sb.toString()
+        println(result)
     }
 
 }

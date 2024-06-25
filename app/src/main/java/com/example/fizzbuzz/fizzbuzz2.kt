@@ -23,7 +23,8 @@ fun fizzbuzz2(maxNumber: Int) {
             parts.reverse()
         }
 
-        if (parts.isEmpty()) println(i.toString()) else println(parts.joinToString(""))
+        val result = if (parts.isEmpty()) i.toString() else parts.joinToString("")
+        println(result)
     }
 
 
